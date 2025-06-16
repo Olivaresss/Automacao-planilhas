@@ -1,8 +1,7 @@
 import os
 import pandas as pd
 
-# ===== LER PLANILHA =====
-# ===== MUDAR AQUI QUANDO QUISER TROCAR A PAGINA DO EXCEL =====
+# MUDAR AQUI QUANDO QUISER TROCAR A PAGINA DO EXCEL
 nome_aba = "Manufatura ok"
 caminho_excel = os.path.expanduser("~/Downloads/Pasta.xlsx")
 
@@ -16,17 +15,17 @@ except ValueError:
     print(f"Aba '{nome_aba}' não encontrada no arquivo.")
     exit()
 
-# ===== VALIDAR COLUNAS =====
+# VALIDAR COLUNAS
 col_nivel1 = df.columns[0]
 col_nivel2 = df.columns[1]
 col_nivel3 = df.columns[2]
 
 df = df[[col_nivel1, col_nivel2, col_nivel3]].dropna().drop_duplicates()
 
-# ===== CAMINHO LOCAL DO SHAREPOINT SINCRONIZADO PELO ONEDRIVE =====
+# CAMINHO LOCAL DO SHAREPOINT SINCRONIZADO PELO ONEDRIVE
 caminho_local_sharepoint = r"C:\Users\rodri\OneDrive - Stefanini\testeGuildasSAP - Documentos"
 
-# ===== CRIAR PASTAS LOCALMENTE =====
+# CRIAR PASTAS LOCALMENTE
 for index, row in df.iterrows():
     nivel1 = str(row[col_nivel1]).strip()
     nivel2 = str(row[col_nivel2]).strip()
