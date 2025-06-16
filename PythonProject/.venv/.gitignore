@@ -1,0 +1,24 @@
+# Ambiente virtual (geralmente fica dentro do projeto ou em outra pasta)
+venv/
+.env/
+*.env
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Configurações do PyCharm
+.idea/
+
+# Arquivos temporários
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Excel (caso não queira subir pro repo)
+*.xlsx
+
+# Jupyter notebook checkpoints (só se usar)
+.ipynb_checkpoints
