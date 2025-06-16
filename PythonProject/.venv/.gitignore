@@ -1,24 +1,85 @@
-# Ambiente virtual (geralmente fica dentro do projeto ou em outra pasta)
-venv/
-.env/
-*.env
-
-# Cache do Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
 
-# Configurações do PyCharm
+# C extensions
+*.so
+
+# Distribuição e instalação
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Arquivos criados pelo PyInstaller
+*.manifest
+*.spec
+
+# Pipenv
+#   Se usa pipenv
+Pipfile.lock
+
+# PEP 582; diretórios __pypackages__
+__pypackages__/
+
+# pyenv
+.python-version
+
+# Envs e variáveis de ambiente
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Variáveis de ambiente - arquivos .env
+.env
+.env.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# PyCharm
 .idea/
 
-# Arquivos temporários
+# VSCode
+.vscode/
+
+# Logs e arquivos temporários
 *.log
 *.tmp
-.DS_Store
-Thumbs.db
+*.temp
+*.bak
+*.swp
 
-# Excel (caso não queira subir pro repo)
-*.xlsx
+# Testes
+.coverage
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
 
-# Jupyter notebook checkpoints (só se usar)
-.ipynb_checkpoints
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
